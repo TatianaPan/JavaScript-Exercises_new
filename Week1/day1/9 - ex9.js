@@ -11,11 +11,10 @@
 // }
 
 function exp(b, n) {
-    let result = b;
     if (n === 0) {
-        return result;
+        return 1;
     } else {
-        return exp(b * result, n - 1);
+        return b * exp(b, n - 1);
     }
 }
 

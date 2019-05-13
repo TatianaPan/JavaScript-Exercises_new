@@ -2,14 +2,14 @@
 
 function splitTheBill(args) {
     let total = 0;
-    for (let i = 0; i < args.length; i++) {
-        total += group[i];
+    for (let key in args) {
+        total += args[key];
     }
 
     let amount = total / (Object.keys(args).length);
     
-    for (let i = 0; i < args.length; i++) {
-        args[i] = amount - args[i]; 
+    for (let key in args) {
+        args[key] = amount - args[key]; 
     }
     return args;
 }

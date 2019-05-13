@@ -10,7 +10,7 @@ function longest(a, b) {
             c.push(arr3[i]);
         }
     }
-    return c.join('');ß
+    return c.join('');
 }
 
 // const longest = a, b => {
