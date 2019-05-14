@@ -1,45 +1,38 @@
 class  Restaurant {
     constructor () {
-        this.clients = [];
+        this.orders = [];
     }
     orderDish(dish, client) {
-        clientFind(client => {
-
-           const clientFound = this.clients.find(function(cl){
-              return cl.id === client.id
-           })
-           if (clientFound){
-               clientFound.dishes.push(dish)
-           }else{
-               client.dishes = [dish]
-               this.clients.push(client)
-           }
+        this.orders.push({
+            client: client,
+            dish: dish
         })
-        
-        //this.clients.push(dish);
     }
     printOrders() {
-        this.clients.forEach(dish => {
-            console.log(`# ${this.clients.indexOf(dish)}: ${dish.name}`)
-        })
+        for (let order of this.orders) {
+            console.log(`# ${this.orders.indexOf(order)}: ${order.dish.name}`);
+        }
     }
 
     printCheck(customer) {
         let sum = 0;
+        let num = 0;
         console.log(`${customer.name}`)
-        for (let i = 0; i < this.clients.length; i++) {
-            
-            console.log(`# ${i}: ${this.clients[i].name} - ${this.clients[i].prise}`);
-            sum += this.clients[i].prise;
+        for (let order of this.orders) {
+            if (customer.id === order.client.id) {
+                console.log(`# ${num}: ${order.dish.name} - ${order.dish.price}`);
+                num++;
+                sum += order.dish.price;
+            }
         }
         console.log(`Total: ${sum}`);
     }
 }
 
 class Dish {
-    constructor(name, prise, ingredients) {
+    constructor(name, price, ingredients) {
         this.name = name;
-        this.prise = prise;
+        this.price = price;
         this.ingredients = ingredients;
     }
     cost() {
@@ -52,7 +45,7 @@ class Dish {
     }
 
     profit() {
-        let profit = this.prise - this.cost();
+        let profit = this.price - this.cost();
         return profit;
     }
 
@@ -88,8 +81,10 @@ const goofy = {
 restaurant.orderDish(pizza, goofy);
 restaurant.orderDish(salad, pluto);
 restaurant.orderDish(pizza, pluto);
-//restaurant.printOrders();
-salad.profit();
-console.log(restaurant.printCheck(goofy));
+console.log(restaurant.orders);
+restaurant.printCheck(pluto);
+restaurant.printOrders();
+//salad.profit();
+//console.log(restaurant.printCheck(goofy));
 
 

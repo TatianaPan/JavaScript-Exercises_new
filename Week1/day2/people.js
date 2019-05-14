@@ -75,3 +75,5 @@ luciano.sing();
 junior.workHard();
 author.signBook();
 laurent.impress();
+
+console.log(Person);
