@@ -4,17 +4,19 @@ class  Restaurant {
     }
     orderDish(dish, client) {
         clientFind(client => {
-            for (let i = 0; i < this.clients.length; i++) {
-                if (client.id !== this.clients[i].id) {
-                    this.clients.push(client);
-                    client.dish = dish;
-                } else {
-                    this.clients[i].dish = dish;
-                }
-            }
+
+           const clientFound = this.clients.find(function(cl){
+              return cl.id === client.id
+           })
+           if (clientFound){
+               clientFound.dishes.push(dish)
+           }else{
+               client.dishes = [dish]
+               this.clients.push(client)
+           }
         })
         
-        // this.clients.push(dish);
+        //this.clients.push(dish);
     }
     printOrders() {
         this.clients.forEach(dish => {
