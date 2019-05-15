@@ -6,12 +6,10 @@
 // If the constructor function does not return a value, JavaScript implicitly inserts return this; at the end of the constructor function’s execution.
 
 
-function myNew(fn, args) {
+function myNew(fn, ...args) {
     const newObj = {}; 
-    fn.call(newObj); 
     Object.setPrototypeOf(newObj, fn.prototype); 
-    fn.apply(this, [args]);
-
+    fn.apply(newObj, args);
     return newObj; 
   }
 
