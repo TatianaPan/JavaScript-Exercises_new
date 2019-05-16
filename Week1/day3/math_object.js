@@ -4,8 +4,8 @@ const myMath = Object.create(Math);
 myMath.randomInt = function(...max) {
     let randomNum = 0;
     if (max.length === 0) {
-        randomNum = myMath.floor(myMath.random());
-        console.log(randomNum);
+        randomNum = myMath.random();
+        return (myMath.random());
     } else if (max.length === 2) {
         const minNum = myMath.min(max[0], max[1]);
         const maxNum = myMath.max(max[0], max[1]); 
