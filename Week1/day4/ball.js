@@ -4,7 +4,6 @@ class Ball {
         this.ballX = x;
         this.ballY = y;
         this.startPoint = [1, 1];
-
     }
 
     createBall(context) {
