@@ -27,6 +27,26 @@ class  Restaurant {
         }
         console.log(`Total: ${sum}`);
     }
+
+    totalProfit() {
+        let total = 0;
+        for (let order of this.orders) {
+            total += order.dish.profit();
+        }
+        console.log(`Restaurant profit for today is CHF ${total}.`);
+        return total;
+    }
+
+    customerProfit(customer) {
+        let profit = 0;
+        for (let order of this.orders) {
+            if (customer.id === order.client.id) {
+                profit += order.dish.profit();
+            }
+        }
+        console.log(`Restaurant profit of ${customer.name} is CHF ${profit}.`);
+        return profit;
+    }
 }
 
 class Dish {
@@ -81,10 +101,12 @@ const goofy = {
 restaurant.orderDish(pizza, goofy);
 restaurant.orderDish(salad, pluto);
 restaurant.orderDish(pizza, pluto);
-console.log(restaurant.orders);
-restaurant.printCheck(pluto);
-restaurant.printOrders();
+restaurant.orderDish(salad, goofy);
+//console.log(restaurant.orders);
+//restaurant.printCheck(pluto);
+//restaurant.printOrders();
 //salad.profit();
 //console.log(restaurant.printCheck(goofy));
+console.log(restaurant.customerProfit(goofy));
 
 
