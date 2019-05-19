@@ -4,11 +4,20 @@ function areSameType(args) {
     if (args.length === 0) {
         return true;
     }
-    for (let i = 1; i < args.length; i++) {
-        if (typeof args[i] !== typeof[0]) {
-            return false;
+    for (let i = 0; i < args.length; i++) {
+        if (Array.isArray(args[0])) {
+            if (!Array.isArray(args[1])) {
+                return false;
+            } else {
+                return true;
+            }
+        } else {
+            if (typeof args[0] !== typeof args[1]) {
+                return false;
+            } else {
+                return true;
+            }
         }
-        return true;
     }
 }
 
