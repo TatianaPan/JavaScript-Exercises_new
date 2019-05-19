@@ -8,7 +8,7 @@ function toEnglish(str) {
         item = String.fromCharCode(item);
         result.push(item);
     }
-    return result.join(''); // how does it keep spaces between words?
+    return result.join(''); 
 }
 
 console.log(
