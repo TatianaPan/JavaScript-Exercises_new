@@ -13,17 +13,6 @@ function longest(a, b) {
     return c.join('');
 }
 
-// const longest = a, b => {
-//     let result = [];
-//     let c = (a + b).split('').sort();
-//     for (let i = 0; i < c.length; i++) {
-//         if (result.includes(c[i]) !== true) {
-//             result.push(c[i]);
-//         }
-//     } 
-//     return result.join('');
-// }
-
 longest('abcccaa', 'acddddffzzz') // => 'abcdfz'
 
 a = 'xyaabbbccccdefww'
