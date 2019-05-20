@@ -2,9 +2,7 @@
 // PROBLEM: Given a list of sorted integers, find index of query value
 
 // INPUT: List L of n numbers, query item q
-
 // OUTPUT: Index i of q in L. Return i=-1 if it doesn’t exist.
-
 // // ALGORITHM: binarySearch(L, q) 1. If n == 0, then we haven’t found the element -> return -1 
 // 1. If L[n/2] == q, return n/2 
 // 1. If L[n/2] > q, then search in lower half of array, i.e. return binarySearch(L[0...n/2]) 
