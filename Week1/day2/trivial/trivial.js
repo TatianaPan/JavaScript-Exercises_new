@@ -5,17 +5,26 @@ class Trivial {
         this.correctAnswers = 0;
         this.wrongAnswers = 0;
         this.players = [];
+        this.currentPlayerIndex = 0;
     }
 
     askQuestion() {
         let question = this.questions[this.currentQuestionIndex];
-        let reply = window.prompt(question.title, question.choices);
+        let player = this.players[this.currentPlayerIndex];
+        let reply = window.prompt(`Question for ${player.name}:\n ${question.title}`, question.choices);
+        
         if (reply.toUpperCase() === question.correctAns) {
             this.correctAnswers++;
         } else {
             this.wrongAnswers++;
-            console.log('Oops! Wrong answer.')
         } 
+
+        if (this.currentPlayerIndex === this.players.length - 1) {
+            this.currentPlayerIndex = 0;
+        } else {
+            this.currentPlayerIndex++;
+        }
+        return reply;
     }
 
     play() {
@@ -49,15 +58,21 @@ class Player {
     constructor(name) {
         this.name = name;
     }
+
+    addAnswer() {
+
+    }
 }
 
 const question1 = new Question('Capital of France is', ['A - Paris', 'B - Rome'], 'A');
 const question2 = new Question('Capital of Belarus is', ['A - Minsk', 'B - Milan'], 'A');
 const question3 = new Question('The author of Harry Potter is', ['A - Astrid Lindgren', 'B - Joanne Rowling'], 'B');
+const question4 = new Question('Who won Eurovision 2019?', ['A - Duncan Laurence', 'B - Sergey Lazarev'], 'A');
 const trivial = new Trivial();
 trivial.addQuestion(question1);
 trivial.addQuestion(question2);
 trivial.addQuestion(question3);
+trivial.addQuestion(question4);
 const player1 = new Player('Amy');
 trivial.addPlayer(player1);
 const player2 = new Player('Bob');

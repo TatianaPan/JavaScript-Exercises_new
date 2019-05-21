@@ -24,7 +24,10 @@ function selectionSort(arr) {
 
     if (!arr.length) {
         return 'Array is empty';
+    } else if (arr.length === 1) {
+        return arr;
     }
+
     
     let amountOfPushed = 0;
 
@@ -45,5 +48,5 @@ function selectionSort(arr) {
     return arr;
     
 }
-let arr = [ß];
+let arr = [];
 console.log(selectionSort(arr));
