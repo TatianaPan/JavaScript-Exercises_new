@@ -48,5 +48,5 @@ function selectionSort(arr) {
     return arr;
     
 }
-let arr = [];
+let arr = [1, 40, 34, 17, 23];
 console.log(selectionSort(arr));
