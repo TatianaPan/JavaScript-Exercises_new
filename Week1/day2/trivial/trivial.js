@@ -6,12 +6,14 @@ class Trivial {
         this.wrongAnswers = 0;
         this.players = [];
         this.currentPlayerIndex = 0;
+        this.reply = '';
     }
 
     askQuestion() {
         let question = this.questions[this.currentQuestionIndex];
         let player = this.players[this.currentPlayerIndex];
-        let reply = window.prompt(`Question for ${player.name}:\n ${question.title}`, question.choices);
+        this.reply = window.prompt(`Question for ${player.name}:\n ${question.title}`, question.choices);
+        player.name.addAnswer()
         
         if (reply.toUpperCase() === question.correctAns) {
             this.correctAnswers++;
@@ -27,15 +29,15 @@ class Trivial {
         return reply;
     }
 
-    play() {
-        if (this.questions.length) {
-            for (let question of this.questions) {
-                this.askQuestion();
-                this.currentQuestionIndex++;
-            }
-        } 
-        window.alert(`You have answered ${this.questions.length} questions. You got right ${this.correctAnswers} of them.`)
-    }
+    // play() {
+    //     if (this.questions.length) {
+    //         for (let question of this.questions) {
+    //             this.askQuestion();
+    //             this.currentQuestionIndex++;
+    //         }
+    //     } 
+    //     window.alert(`You have answered ${this.questions.length} questions. You got right ${this.correctAnswers} of them.`)
+    // }
 
     addQuestion(question) {
         this.questions.push(question);
@@ -60,7 +62,7 @@ class Player {
     }
 
     addAnswer() {
-
+        
     }
 }
 
@@ -77,4 +79,5 @@ const player1 = new Player('Amy');
 trivial.addPlayer(player1);
 const player2 = new Player('Bob');
 trivial.addPlayer(player2);
-trivial.play() // you should get a prompt with 'Capital of France' and its choices.
+//trivial.play() // you should get a prompt with 'Capital of France' and its choices.)
+console.log(trivial.players);

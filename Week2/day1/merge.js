@@ -32,42 +32,39 @@
 
 // 2.4. If B is empty, then remove A[0] and add at it end of L
 
-function mergeSort(arr) {
-    let firstIndex = 0; 
-    let lastIndex = arr.length - 1;
-    let middleIndex = Math.floor((firstIndex + lastIndex) / 2);
-
-    let arrSorted1 = arr.slice(0, middleIndex + 1);
-    let arrSorted2 = arr.slice(middleIndex + 1, arr.length);
-
-    function sliceArr(halfArr) {
-        if (halfArr.length === 1 || halfArr.length === 2) {
-            return halfArr;
-        } 
-            let first = 0;
-            let last = halfArr.length - 1;
-            let middle = Math.floor((first + last) / 2);
-            let arr1 = halfArr.slice(0, middle + 1);
-            return arr1, sliceArr(halfArr.slice(middle + 1));
-
+function mergeArrays(arr1, arr2) {
+    let result = [];
+    let index1 = 0; 
+    let index2 = 0;
+    while (result.length < arr1.length + arr2.length) {
+        if (arr1[index1] < arr2[index2] || index2 >= arr2.length) {
+            result.push(arr1[index1]);
+            index1++;
+        } else if (arr1[index1] > arr2[index2] || index1 >= arr1.length) {
+            result.push(arr2[index2]);
+            index2++;
+        }
     }
-    
+    return result;
 }
 
-function sliceArr(halfArr) {
-    
-        let first = 0;
-        let last = halfArr.length - 1;
-        let middle = Math.floor((first + last) / 2);
-        let arr1 = halfArr.slice(0, middle + 1);
+function mergeSort(arr) {
 
-        if (halfArr.length === 1 || halfArr.length === 2) {
-            return arr1, halfArr;
-        } 
-        return arr1, sliceArr(halfArr.slice(middle + 1));
+    if (arr.length <= 1) {
+        return arr;
+    }
+    let middleIndex = Math.floor(arr.length / 2);
 
-       
+    let leftPart = arr.slice(0, middleIndex);
+    let rightPart = arr.slice(middleIndex);
 
+    let sortedArr1 = mergeSort(leftPart);
+    let sortedArr2 = mergeSort(rightPart);
+
+    return mergeArrays(sortedArr1, sortedArr2);
 }
-let arr = [3, 6, 4, 8, 1, 98]
-console.log(sliceArr(arr));
+
+
+let arrBlabla = [2, 75, 4, 5, 0, 6, 46, 10];
+//let arrNew = [7, 9, 11, 15, 24];
+console.log(mergeSort(arrBlabla));
