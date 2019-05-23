@@ -1,0 +1,30 @@
+.container {
+    background-color: #462921;;
+    height: 700px;
+    width: 700px;
+}
+
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 2fr);
+    grid-template-rows: repeat(10, 2fr);
+    height: 600px;
+    width: 600px;
+    padding: 50px;
+  }
+
+  .item {
+    background-color: #b5915f;
+  }
+
+  .dark {
+    background-color: #441a03;
+  }
+
+  .top {
+    background-color: #7d694c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
