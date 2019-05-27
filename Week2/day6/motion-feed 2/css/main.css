@@ -1,0 +1,454 @@
+:root {
+  --color-primary: #c468ff;
+  --linear-gradient: linear-gradient(102deg, #c468ff, #6e91f6); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; }
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  object-fit: contain; }
+
+.header {
+  height: 5.0625rem;
+  display: flex; }
+
+.main {
+  display: flex;
+  height: 75rem;
+  background-color: #eeeef1f1;
+  flex-direction: column; }
+  .main .nav {
+    display: flex;
+    height: 5rem; }
+  .main .columns {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
+
+:root {
+  --color-primary: #c468ff;
+  --linear-gradient: linear-gradient(102deg, #c468ff, #6e91f6); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; }
+
+.header .logo {
+  width: 1.625rem;
+  height: 1.625rem;
+  margin-left: 2.5rem;
+  margin-top: 1.6875rem;
+  margin-right: 0.625rem; }
+
+.header p {
+  width: 4.375rem;
+  height: 1.5625rem;
+  font-family: Roboto;
+  font-size: 1.375rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  margin-top: 1.75rem;
+  margin-right: 6.25rem; }
+
+.header .posts-logo {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-top: 2rem;
+  margin-right: 0.625rem; }
+
+.header .posts {
+  width: 2.625rem;
+  height: 1.1875rem;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000; }
+
+.header .friends {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 1.8125rem;
+  margin-right: 0.625rem; }
+
+.header .find-friends {
+  width: 5.5625rem;
+  height: 1.1875rem;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000; }
+
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .left .one {
+    display: flex;
+    width: 35rem;
+    height: 7.5rem;
+    align-self: flex-end;
+    margin-right: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff; }
+    .left .one .jennifer {
+      width: 3.75rem;
+      height: 3.75rem;
+      margin-left: 1.875rem;
+      margin-top: 1.875rem;
+      margin-bottom: 1.875rem;
+      margin-right: 1.875rem; }
+    .left .one p {
+      width: 13.8125rem;
+      height: 1.625rem;
+      opacity: 0.5;
+      font-family: Roboto;
+      font-size: 1rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.63;
+      letter-spacing: normal;
+      color: #000000;
+      margin-top: 3.0625rem;
+      margin-bottom: 2.8125rem;
+      margin-right: 6.875rem; }
+    .left .one .send-button {
+      width: 3.75rem;
+      height: 3.75rem;
+      margin-top: 1.875rem;
+      margin-bottom: 1.875rem;
+      margin-right: 1.875rem; }
+  .left .two {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 46.875rem;
+    align-self: flex-end;
+    margin-right: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff; }
+    .left .two .jennifer-post {
+      display: flex;
+      align-items: flex-start; }
+      .left .two .jennifer-post img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 1.875rem;
+        margin-top: 1.9375rem;
+        margin-right: 1rem;
+        margin-bottom: 1.4375rem; }
+      .left .two .jennifer-post .name {
+        margin-top: 1.9375rem;
+        width: 5.75rem;
+        height: 1rem;
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #000000; }
+      .left .two .jennifer-post .dots {
+        width: 1.5rem;
+        height: 1.75rem;
+        margin-left: 21.125rem; }
+    .left .two .post {
+      margin-left: 1.875rem;
+      margin-right: 1.875rem;
+      width: 31.25rem;
+      height: 3.25rem;
+      font-family: Roboto;
+      font-size: 1rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.63;
+      letter-spacing: normal;
+      color: #000000;
+      margin-bottom: 2.1875rem; }
+    .left .two .feed-pics {
+      display: flex; }
+      .left .two .feed-pics .image1 {
+        width: 15rem;
+        height: 15rem;
+        margin-left: 1.875rem;
+        margin-right: 1.25rem;
+        margin-bottom: 1.25rem; }
+      .left .two .feed-pics .image2 {
+        width: 15rem;
+        height: 15rem;
+        margin-bottom: 1.25rem; }
+    .left .two .footer {
+      display: flex;
+      align-content: center;
+      margin-left: 1.875rem; }
+      .left .two .footer .like {
+        width: 1.25rem;
+        height: 1.15625rem;
+        margin-right: 1.125rem; }
+      .left .two .footer .share {
+        width: 1.375rem;
+        height: 1.15rem;
+        margin-left: 2.5625rem;
+        margin-right: 1.0625rem; }
+      .left .two .footer #share {
+        margin-right: 17.3125rem; }
+      .left .two .footer .grey-text {
+        width: 2.5rem;
+        height: 1rem;
+        opacity: 0.5;
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #000000; }
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .right .three {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 14.4375rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff; }
+    .right .three .patricia {
+      display: flex;
+      align-items: flex-start; }
+      .right .three .patricia img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 1.875rem;
+        margin-top: 1.9375rem;
+        margin-right: 1rem;
+        margin-bottom: 1.4375rem; }
+      .right .three .patricia .name {
+        margin-top: 1.9375rem;
+        width: 5.625rem;
+        height: 1rem;
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #000000; }
+    .right .three .post {
+      margin-left: 1.875rem;
+      margin-right: 1.875rem;
+      width: 31.25rem;
+      height: 3.25rem;
+      font-family: Roboto;
+      font-size: 1rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.63;
+      letter-spacing: normal;
+      color: #000000;
+      margin-bottom: 2.1875rem; }
+    .right .three .footer {
+      display: flex;
+      align-content: center;
+      margin-left: 1.875rem; }
+      .right .three .footer .like {
+        width: 1.25rem;
+        height: 1.15625rem;
+        margin-right: 1.125rem; }
+      .right .three .footer .share {
+        width: 1.375rem;
+        height: 1.15rem;
+        margin-left: 2.5625rem;
+        margin-right: 1.0625rem; }
+      .right .three .footer #share {
+        margin-right: 17.3125rem; }
+      .right .three .footer .grey-text {
+        width: 2.5rem;
+        height: 1rem;
+        opacity: 0.5;
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #000000; }
+  .right .four {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 39.9375rem;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff; }
+    .right .four .albert {
+      display: flex; }
+      .right .four .albert img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 1.875rem;
+        margin-top: 1.9375rem;
+        margin-right: 1rem;
+        margin-bottom: 1.4375rem; }
+      .right .four .albert .name {
+        display: flex;
+        margin-top: 1.9375rem;
+        width: 12.5rem;
+        height: 1rem;
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #000000; }
+    .right .four .post {
+      margin-left: 1.875rem;
+      margin-right: 1.875rem;
+      width: 31.25rem;
+      height: 3.25rem;
+      font-family: Roboto;
+      font-size: 1rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.63;
+      letter-spacing: normal;
+      color: #000000; }
+  .right .shared-post {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 1.875rem;
+    margin: 0 0 1.9375rem 0;
+    padding-left: 1.875rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.1); }
+    .right .shared-post .leticia {
+      display: flex; }
+      .right .shared-post .leticia img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 1.875rem;
+        margin-top: 1.9375rem;
+        margin-right: 1rem;
+        margin-bottom: 1.4375rem; }
+      .right .shared-post .leticia .name {
+        display: flex;
+        margin-top: 1.9375rem;
+        width: 12.5rem;
+        height: 1rem;
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #000000; }
+    .right .shared-post .post {
+      margin-left: 1.875rem;
+      margin-right: 1.875rem;
+      width: 29.1875rem;
+      height: 3.25rem;
+      font-family: Roboto;
+      font-size: 1rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.63;
+      letter-spacing: normal;
+      color: #000000;
+      margin-bottom: 2.1875rem; }
+    .right .shared-post img {
+      width: 29.1875rem;
+      height: 15.625rem; }
+  .right .footer {
+    display: flex;
+    align-content: center;
+    margin-left: 1.875rem; }
+    .right .footer .like {
+      width: 1.25rem;
+      height: 1.15625rem;
+      margin-right: 1.125rem; }
+    .right .footer .share {
+      width: 1.375rem;
+      height: 1.15rem;
+      margin-left: 2.5625rem;
+      margin-right: 1.0625rem; }
+    .right .footer #share {
+      margin-right: 15.625rem; }
+    .right .footer .grey-text {
+      width: 3rem;
+      height: 1rem;
+      opacity: 0.5;
+      font-family: Roboto;
+      font-size: 0.875rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: right;
+      color: #000000; }

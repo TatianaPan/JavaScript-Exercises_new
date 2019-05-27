@@ -1,0 +1,472 @@
+@import "functions";
+@import "base";
+
+.header {
+    .logo {
+        width: rem(26px);
+        height: rem(26px);
+        margin-left: rem(40px);
+        margin-top: rem(27px);
+        margin-right: rem(10px);
+    }
+    p {
+        width: rem(70px);
+        height: rem(25px);
+        font-family: Roboto;
+        font-size: rem(22px);
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #000000;
+        margin-top: rem(28px);
+        margin-right: rem(100px);
+    }
+    .posts-logo {
+        width: rem(18px);
+        height: rem(18px);
+        margin-top: rem(32px);
+        margin-right: rem(10px);
+    }
+    .posts {
+        width: rem(42px);
+        height: rem(19px);
+        font-family: Roboto;
+        font-size: rem(16px);
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #000000;
+    }
+
+    .friends {
+        width: rem(24px);
+        height: rem(24px);
+        margin-top: rem(29px);
+        margin-right: rem(10px);
+    }
+    .find-friends {
+        width: rem(89px);
+        height: rem(19px);
+        font-family: Roboto;
+        font-size: rem(16px);
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #000000;
+    }
+
+}
+
+.left {
+    //border: 1px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .one {
+        display: flex;
+        //border: 1px solid black;
+        width: rem(560px);
+        height: rem(120px);
+        align-self: flex-end;
+        // margin-left: rem(144px);
+        margin-right: rem(32px);
+        margin-top: rem(40px);
+        margin-bottom: rem(32px);
+        border-radius: 4px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        .jennifer {
+            width: rem(60px);
+            height: rem(60px);
+            margin-left: rem(30px);
+            margin-top: rem(30px);
+            margin-bottom: rem(30px);
+            margin-right: rem(30px); 
+        }
+
+        p {
+            width: rem(221px);
+            height: rem(26px);
+            opacity: 0.5;
+            font-family: Roboto;
+            font-size: rem(16px);
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.63;
+            letter-spacing: normal;
+            color: #000000;
+            margin-top: rem(49px);
+            margin-bottom: rem(45px);
+            margin-right: rem(110px);
+        }
+
+        .send-button {
+            width: rem(60px);
+            height: rem(60px);
+            margin-top: rem(30px);
+            margin-bottom: rem(30px);
+            margin-right: rem(30px); 
+            //border-radius: rem(30px);
+            //background-image: linear-gradient(133deg, #c468ff, #6e91f6);
+        }
+    }
+    .two {
+        display: flex;
+        flex-direction: column;
+        //border: 1px solid black;
+        width: rem(560px);
+        height: rem(750px);
+        align-self: flex-end;
+        margin-right: rem(32px);
+        border-radius: 4px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        //margin-bottom: rem(336px);
+        .jennifer-post {
+            display: flex;
+            align-items: flex-start;
+            img {
+                width: rem(40px);
+                height: rem(40px);
+                margin-left: rem(30px);
+                margin-top: rem(31px);
+                margin-right: rem(16px);
+                margin-bottom: rem(23px);
+            }
+            .name {
+                margin-top: rem(31px);
+                width: rem(92px);
+                height: rem(16px);
+                font-family: Roboto;
+                font-size: rem(14px);
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: #000000;
+                //margin-right: rem(384px);
+            }
+            .dots {
+                //align-self: flex-end;
+                width: rem(24px);
+                height: rem(28px);
+                margin-left: rem(338px);
+            }
+        }
+        .post {
+            margin-left: rem(30px);
+            margin-right: rem(30px);
+            width: rem(500px);
+            height: rem(52px);
+            font-family: Roboto;
+            font-size: rem(16px);
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.63;
+            letter-spacing: normal;
+            color: #000000;
+            margin-bottom: rem(35px);
+        }
+        .feed-pics {
+            display: flex;
+            //justify-content: center;
+            .image1 {
+                width: rem(240px);
+                height: rem(240px);
+                margin-left: rem(30px);
+                margin-right: rem(20px);
+                margin-bottom: rem(20px);
+            }
+            .image2 {
+                width: rem(240px);
+                height: rem(240px);
+                margin-bottom: rem(20px);
+            }
+        }
+        .footer {
+            display: flex;
+            align-content: center;
+            margin-left: rem(30px);
+            .like {
+                width: rem(20px);
+                height: rem(18.5px);
+                margin-right: rem(18px);
+            }
+            .share {
+                width: rem(22px);
+                height: rem(18.4px);
+                margin-left: rem(41px);
+                margin-right: rem(17px);
+            }
+            #share {
+                margin-right: rem(277px);
+            }
+            .grey-text {
+                width: rem(40px);
+                height: rem(16px);
+                opacity: 0.5;
+                font-family: Roboto;
+                font-size: rem(14px);
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: right;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.right {
+    //border: 1px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .three {
+        display: flex;
+        flex-direction: column;
+        //border: 1px solid black;
+        width: rem(560px);
+        height: rem(231px);
+        margin-top: rem(40px);
+        margin-bottom: rem(32px);
+        border-radius: 4px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        // margin-right: rem(144px);
+        .patricia {
+            display: flex;
+            align-items: flex-start;
+            img {
+                width: rem(40px);
+                height: rem(40px);
+                margin-left: rem(30px);
+                margin-top: rem(31px);
+                margin-right: rem(16px);
+                margin-bottom: rem(23px);
+            }
+            .name {
+                margin-top: rem(31px);
+                width: rem(90px);
+                height: rem(16px);
+                font-family: Roboto;
+                font-size: rem(14px);
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: #000000;
+                //margin-right: rem(384px);
+            }
+            
+        }
+        .post {
+            margin-left: rem(30px);
+            margin-right: rem(30px);
+            width: rem(500px);
+            height: rem(52px);
+            font-family: Roboto;
+            font-size: rem(16px);
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.63;
+            letter-spacing: normal;
+            color: #000000;
+            margin-bottom: rem(35px);
+        }
+        .footer {
+            display: flex;
+            align-content: center;
+            margin-left: rem(30px);
+            .like {
+                width: rem(20px);
+                height: rem(18.5px);
+                margin-right: rem(18px);
+            }
+            .share {
+                width: rem(22px);
+                height: rem(18.4px);
+                margin-left: rem(41px);
+                margin-right: rem(17px);
+            }
+            #share {
+                margin-right: rem(277px);
+            }
+            .grey-text {
+                width: rem(40px);
+                height: rem(16px);
+                opacity: 0.5;
+                font-family: Roboto;
+                font-size: rem(14px);
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: right;
+                color: #000000;
+            }
+        }
+    }
+    .four {
+        display: flex;
+        flex-direction: column;
+        //border: 1px solid black;
+        width: rem(560px);
+        height: rem(639px);
+        border-radius: 4px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        .albert {
+            display: flex;
+            //align-items: flex-start;
+            img {
+                width: rem(40px);
+                height: rem(40px);
+                margin-left: rem(30px);
+                margin-top: rem(31px);
+                margin-right: rem(16px);
+                margin-bottom: rem(23px);
+            }
+            .name {
+                display: flex;
+                margin-top: rem(31px);
+                width: rem(200px);
+                height: rem(16px);
+                font-family: Roboto;
+                font-size: rem(14px);
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: #000000;
+                //margin-right: rem(384px);
+            }
+            
+        }
+        .post {
+            margin-left: rem(30px);
+            margin-right: rem(30px);
+            width: rem(500px);
+            height: rem(52px);
+            font-family: Roboto;
+            font-size: rem(16px);
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.63;
+            letter-spacing: normal;
+            color: #000000;
+            //margin-bottom: rem(35px);
+        }
+    }
+    .shared-post {
+        display: flex;
+        flex-direction: column;
+        margin-top: rem(32px);
+        margin-left: rem(30px);
+        margin: 0 0 rem(31px) 0;
+        padding-left: rem(30px);
+        border-left: 1px solid rgba(0, 0, 0, .1);
+        .leticia {
+            display: flex;
+            //align-items: flex-start;
+            img {
+                width: rem(40px);
+                height: rem(40px);
+                margin-left: rem(30px);
+                margin-top: rem(31px);
+                margin-right: rem(16px);
+                margin-bottom: rem(23px);
+            }
+            .name {
+                display: flex;
+                margin-top: rem(31px);
+                width: rem(200px);
+                height: rem(16px);
+                font-family: Roboto;
+                font-size: rem(14px);
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: #000000;
+                //margin-right: rem(384px);
+            }
+            
+        }
+        .post {
+            margin-left: rem(30px);
+            margin-right: rem(30px);
+            width: rem(467px);
+            height: rem(52px);
+            font-family: Roboto;
+            font-size: rem(16px);
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.63;
+            letter-spacing: normal;
+            color: #000000;
+            margin-bottom: rem(35px);
+        }
+        img {
+            width: rem(467px);
+            height: rem(250px);
+        }
+        
+    }
+    .footer {
+        display: flex;
+        align-content: center;
+        margin-left: rem(30px);
+        .like {
+            width: rem(20px);
+            height: rem(18.5px);
+            margin-right: rem(18px);
+        }
+        .share {
+            width: rem(22px);
+            height: rem(18.4px);
+            margin-left: rem(41px);
+            margin-right: rem(17px);
+        }
+        #share {
+            margin-right: rem(250px);
+        }
+        .grey-text {
+            width: rem(48px);
+            height: rem(16px);
+            opacity: 0.5;
+            font-family: Roboto;
+            font-size: rem(14px);
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: right;
+            color: #000000;
+        }
+    }
+}
+
+
