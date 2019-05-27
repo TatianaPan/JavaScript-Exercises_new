@@ -1,0 +1,94 @@
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: 20px;
+}
+
+main {
+    display: flex;
+    border: 1px solid black;
+    flex-grow: 1;
+}
+
+section {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /*justify-content: space-between;*/
+}
+
+.header {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: flex-end;
+    background-color: #03BAE4;
+}
+
+.header_description {
+    color: white;
+    justify-content: space-between;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    background-color: #F37786;
+    color: white;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.courses_list {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    padding: 0px;
+}
+
+.courses_list li {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
+
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    justify-content: space-around;
+}
+
+footer {
+    display: flex;
+    color: white;
+    border: 1px solid red;
+    background-color: #F37786;
+}
+
+.right {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    align-items: center;
+}
