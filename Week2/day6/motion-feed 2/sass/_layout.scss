@@ -1,0 +1,39 @@
+@import "functions";
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+}
+
+.header {
+    //border: 1px solid black;
+    height: rem(81px);
+    display: flex;
+}
+
+.main {
+    display: flex;
+    //border: 1px solid red;
+    height: rem(1200px);
+    background-color: #eeeef1f1;
+    flex-direction: column;
+
+    .nav {
+        display: flex;
+        height: rem(80px);
+        //border: solid 1px black;
+        //margin-bottom: rem(40px);
+    }
+
+    .columns {
+        display: flex;
+        //border: 1px solid blue;
+        //height: 70%;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+}
+

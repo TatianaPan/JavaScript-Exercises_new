@@ -1,0 +1,27 @@
+:root {
+    --color-primary: #c468ff;
+    --linear-gradient: linear-gradient(102deg, #c468ff, #6e91f6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
