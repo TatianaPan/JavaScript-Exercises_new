@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: sorting-algorithms-byTP
+Version: 0.3
+Summary: Most popular sorting algorithms
+Home-page: http://github.com/storborg/funniest
+Author: Tatiana Pan
+Author-email: flyingcircus@example.com
+License: MIT
+Description: SORTING_ALGORITHMS
+        ___________________
+        
+        contains 4 most popular sorting algorithms:
+        bubble sort
+        insertion sort
+        quick sort
+        selection sort
+        
+        to use:
+        >>> import sorting_algorithms
+        >>> print(sorting_algorithms.bubble_sort())
+        >>> print(sorting_algorithms.insertion_sort())
+        >>> print(sorting_algorithms.quick_sort())
+        >>> print(sorting_algorithms.selection_sort())
+        
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
