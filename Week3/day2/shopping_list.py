@@ -1,5 +1,4 @@
 def shopping_list():
-    import sys
     shopping_list = []
 
     def help_menu():
@@ -11,17 +10,6 @@ def shopping_list():
 
     def user_choice():
         choice = input("What do you want to do? ")
-        print(choice)
-        if choice == "h":
-            help_menu()
-        elif choice == "s":
-            show_items()
-        elif choice == "a":
-            return add_item()
-        elif choice == "r":
-            return remove_item()
-        elif choice == "q":
-            quit()
         return choice
 
     def show_items():
@@ -33,13 +21,12 @@ def shopping_list():
 
     def add_item():
         item = input("What do you want to add? ")
-        position = int(input("Put a list number for yor item "))
+        position = input("Put a list number for your item ")
 
-        if position == None:
+        if position == '':
             shopping_list.append({(len(shopping_list) + 1): item})
         else:
-            shopping_list.insert(position - 1, {position: item})
-        user_choice()
+            shopping_list.insert(int(position) - 1, {int(position): item})
 
     def remove_item():
         if len(shopping_list) == 0:
@@ -50,17 +37,23 @@ def shopping_list():
             if position in item.keys():
                 shopping_list.remove(item)
 
-        user_choice()
-
-    def run_the_app():
+    def run_app():
         print("Hi! This is your Shopping List App.")
+        help_menu()
         while True:
-            help_menu()
-
-            if user_choice() == "q":
+            choice = user_choice()
+            if choice == "h":
+                help_menu()
+            elif choice == "s":
+                show_items()
+            elif choice == "a":
+                add_item()
+            elif choice == "r":
+                remove_item()
+            elif choice == "q":
                 break
 
-    run_the_app()
+    run_app()
 
 
 shopping_list()

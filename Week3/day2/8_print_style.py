@@ -4,7 +4,8 @@ def print_numbers():
         if num % 2 == 0:
             string += str(num)
         else:
-            string += ("_")
+            string += "_"
     print(string)
+
 
 print_numbers()

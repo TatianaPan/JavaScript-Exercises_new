@@ -9,23 +9,27 @@ def start():
         print(number)
         print(count)
 
-        if count == 0:
-            user_guess = input("Guess what it is: ")
-            count += 1
-        elif not user_guess.isdigit():
-            user_guess = input("It's not a number. Enter a number. ")
-        elif count == 5:
-            print(f"Sorry, you have no more tries left.")
-            quit()
-        elif int(user_guess) == number:
+        if count >= 5:
+            print("No more attempts")
+            break
+
+        user_guess = input("Guess what it is: ")
+
+        if not user_guess.isdigit():
+            print("Not a digit")
+            continue
+
+        count += 1
+
+        if int(user_guess) == number:
             print(f"Congratulations! You guessed it in {count} tries. ")
             play_again()
         elif int(user_guess) < number:
-            user_guess = input('Nope. It’s lower than that. Try again.')
-            count += 1
+            print('Nope. It’s lower than that. Try again.')
         elif int(user_guess) > number:
-            user_guess = input('Nope. It’s higher than that. Try again.')
-            count += 1
+            print('Nope. It’s higher than that. Try again.')
+
+    return False
 
 
 def random_number():

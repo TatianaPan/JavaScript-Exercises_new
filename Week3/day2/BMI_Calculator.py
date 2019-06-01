@@ -6,7 +6,7 @@ def bmi(weight, height):
 def calculator():
     print("Let’s calculate your BMI (kg/m2)")
     user_weight = float(input("What is your weight in kg?"))
-    user_height = int(input("What is your height in cm?"))
+    user_height = float(input("What is your height in cm?"))
 
     user_bmi = round(bmi(user_weight, user_height))
 
