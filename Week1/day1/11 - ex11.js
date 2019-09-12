@@ -1,18 +1,17 @@
 // 11. Search and Replace
+/*You will create a program that takes a sentence, then search for a word in it*/ 
 
-function myReplace(sentence, word, newWord) {
-    let arr = sentence.split(' ');
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === word) {
-            let item = arr[i];
-            if (item[0] === item[0].toUpperCase()) {
-                newWord = newWord[0].toUpperCase() + newWord.slice(1);
-            }
-            arr.splice(i, 1, newWord);
-        }
+
+function myReplace(str, word1, word2) {
+    if (str.includes(word1)) {
+        if (word1[0] === word1[0].toUpperCase()) {
+            word2 = word2[0].toUpperCase() + word2.substring(1);
+           
+        } 
+        let newStr = str.replace(word1, word2)
+        
+        return newStr;   
     }
-    return arr.join(' ')
-
 }
 
 console.log(myReplace("He is Sleeping on the couch", "Sleeping", "sitting")); // "He is Sitting on the couch"
