@@ -13,11 +13,21 @@ function longest(a, b) {
     return c.join('');
 }
 
+//ES6
+const longestES6 = (a, b) => {
+    let ab = a + b;
+    let newArr = [];
+    for (const letter of ab) {
+        newArr.indexOf(letter) === -1 ? newArr.push(letter) : null
+    }
+    return newArr.sort().join('');
+
+}
 longest('abcccaa', 'acddddffzzz') // => 'abcdfz'
 
 a = 'xyaabbbccccdefww'
 b = 'xxxxyyyyabklmopq'
-longest(a, b) // => 'abcdefklmopqwxy'
+longestES6(a, b) // => 'abcdefklmopqwxy'
 
 a = 'abcdefghijklmnopqrstuvwxyz'
 longest(a, a) // => 'abcdefghijklmnopqrstuvwxyz'
